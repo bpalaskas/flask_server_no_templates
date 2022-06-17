@@ -9,7 +9,9 @@ def open_(file):
 @app.route('/fonts/<path>')
 def fonts(path):
     print("fonts REQUEST")
-    return send_file(str("./media/"+path))
+    return send_file(str("./fonts/"+path))
+
+#DO not include this route for general use
 @app.route('/buying')
 def buying():
     print("buying REQUEST")
